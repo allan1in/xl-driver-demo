@@ -199,7 +199,7 @@ class XLDriver(QObject):
 
         xl_event = XLevent()
         xl_event.tag = CommonEventTag.XL_TRANSMIT_MSG.value
-        xl_event.tagData.msg.id = 0x7E0
+        xl_event.tagData.msg.id = id
         xl_event.tagData.msg.dlc = len(byte_list)
         xl_event.tagData.msg.flags = 0
         for i in range(len(byte_list)):
